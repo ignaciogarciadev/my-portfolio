@@ -2,10 +2,10 @@
 
 import "../app/globals.css";
 
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import Logo from "../assets/Logo.svg";
 import hamburgerBtn from "../assets/hamburgerBtn.svg";
-import closeBtn from "../assets/closeBtn.svg";
+import closeBtn from "../assets/closebtn.svg";
 import Image from "next/image";
 
 function Navbar() {

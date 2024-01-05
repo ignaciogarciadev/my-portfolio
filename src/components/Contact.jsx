@@ -4,7 +4,7 @@ import { FaPaperPlane } from 'react-icons/fa';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import sendEmail from './sendEmail';
+import sendEmail from '../components/sendEmail';
 import '../app/globals.css';
 
 function Home() {

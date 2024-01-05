@@ -2,7 +2,6 @@ import React from 'react';
 import '../app/globals.css';
 import Test2 from './AboutGpt';
 
-const Ignacio = 'Ignacio'
 
 function home() {
     return (

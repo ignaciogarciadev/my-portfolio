@@ -1,15 +1,18 @@
+// sendEmail.js
 import emailjs from '@emailjs/browser';
 
-require('../../dotenv.config');
-
+const serviceId = process.env.EMAILJS_SERVICE_ID;
+const templateId = process.env.EMAILJS_TEMPLATE_ID;
+const userId = process.env.EMAILJS_USER_ID;
 
 const sendEmail = (templateParams) => {
-  emailjs.send(process.env.SERVICE_ID ,process.env.TEMPLATE_ID, templateParams, 'oGwz_hmab08VP6yDS')
+  emailjs.send(serviceId, templateId, templateParams, userId)
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
-    }, (error) => {
+    })
+    .catch((error) => {
       console.log('FAILED...', error);
     });
-}
+};
 
 export default sendEmail;
