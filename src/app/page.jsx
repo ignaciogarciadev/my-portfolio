@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Contact from '../components/Contact'
+import Hero from '../pages/Hero'
+import About from '../pages/About'
+import Contact from '../pages/Contact'
 
 
 export default function Home() {
