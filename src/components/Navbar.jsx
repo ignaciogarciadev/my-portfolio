@@ -33,6 +33,7 @@ function Navbar() {
                 <ul className="">
                     <li><a href="#Hero" onClick={handleClick}>Home</a></li>
                     <li><a href="#About" onClick={handleClick}>About</a></li>
+                    <li><a href="#Projects" onClick={handleClick}>Projects</a></li>
                     <li><a href="#Contact" onClick={handleClick}>Contact</a></li>
                 </ul>
             </div>
