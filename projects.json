@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Panadería La Miguería",
+        "description": "Página web y página de pedidos",
+        "link": "https://www.lamigueria.uy",
+        "image": "./lamigueria.png"
+    },
+    {
+        "name": "Pizzería La Nonna",
+        "description": "Página web y página de pedidos",
+        "link": "https://www.casadelaculturamaldonado.com",
+        "image": "./lanonna.png"
+    }
+
+]

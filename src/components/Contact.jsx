@@ -87,7 +87,7 @@ function Home() {
                             <FaPaperPlane /> Send
                         </button>
                         <div className="flex items-center justify-center gap-6 text-[35px]">
-                            <a href="https://github.com/ignaciogarciadev"><FaGithub /></a>
+                            <a href="https://github.com/ignaciogarcia-dev"><FaGithub /></a>
                             <a href="https://www.linkedin.com/in/ignaciogarciadev/"><FaLinkedin /></a>
                             <a href="https://twitter.com/ignaciog_dev"><FaTwitter /></a>
 
