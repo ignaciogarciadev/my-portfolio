@@ -1,46 +1,49 @@
 "use client";
+import { useEffect, useState } from "react";
 
-import "../app/globals.css";
+const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
 
-import React, {useState } from "react";
-import Logo from "../assets/Logo.svg";
-import hamburgerBtn from "../assets/hamburgerBtn.svg";
-import closeBtn from "../assets/closebtn.svg";
-import Image from "next/image";
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollThreshold = 500;
 
-function Navbar() {
-    const [toggle, setToggle] = useState(false);
-    const handleClick = () => setToggle(!toggle);
-    return (
-        <div className=" z-50 w-full h-[80px] bg-white fixed">
-            <div className=" bg-white 2xl:max-w-[1400px] 2xl:px-[0] xl:max-w-[1180px] lg:max-w-[924px] md:max-w-[668px] sm:max-w-[640px] max-w-[560px] md:px-[0px] sm:px-[40px] px-[30px] m-auto w-full h-full flex justify-between items-center">
-                <a href="#Hero"><Image src={Logo} alt="logo" className="sm:h-[40px] h-[30px] w-[auto] " /></a>
-                <div className="hidden md:flex items-center">
-                    <ul className="flex gap-6">
-                        <li><a href="#Hero">Home</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Projects">Projects</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
+      if (window.scrollY > scrollThreshold) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+    };
 
-                <div className="md:hidden" onClick={handleClick}>
-                    <Image className="sm:h-[25px] h-[20px] " src={toggle ? closeBtn : hamburgerBtn} alt="menu icon" />
-                </div>
-            </div>
+    window.addEventListener("scroll", handleScroll);
 
-            <div className={toggle ? 'md:max-w-[668px] sm:max-w-[640px] max-w-[560px] md:px-[0px] sm:px-[40px] px-[30px] m-auto w-full absolute left-1/2 transform -translate-x-1/2 p-4 bg-white px-16 md:hidden border-b' : 'hidden'}>
-                <ul className="">
-                    <li><a href="#Hero" onClick={handleClick}>Home</a></li>
-                    <li><a href="#About" onClick={handleClick}>About</a></li>
-                    <li><a href="#Projects" onClick={handleClick}>Projects</a></li>
-                    <li><a href="#Contact" onClick={handleClick}>Contact</a></li>
-                </ul>
-            </div>
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-
-        </div>
-    );
-}
+  return (
+    <nav
+      className={`fixed left-0 w-full bg-black text-white transition-all duration-300 flex justify-center items-center z-50 ${
+        showNavbar ? "top-0" : "top-[-100px]"
+      } backdrop-blur-md bg-opacity-30`}
+    >
+      <div className="w-[90%] flex justify-between items-center">
+        <img src="ReducLogo.png" alt="logo" className="w-[15px] h-auto" />
+        <ul className="flex justify-center space-x-8 p-2 text-sm font-light">
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#">Servicios</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

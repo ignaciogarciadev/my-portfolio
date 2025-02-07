@@ -5,14 +5,9 @@ import Test from './HeroGpt';
 function home() {
     
     return (
-        <div id='Hero' className="relative flex items-center justify-center h-[100vh]">
-            <div className="mx-auto w-full">
-                <div className="text-center">
-                    <h1 className="text-gray-900 sm:text-3xl">
-                        <Test/>
-                    </h1>
-                </div>
-            </div>
+        <div id='Hero' className="w-[100%] flex items-center justify-center h-[100vh] bg-black">
+            <img src='Logo.svg' alt='logo' className='w-[60%] h-a' />
+
         
         </div>
 

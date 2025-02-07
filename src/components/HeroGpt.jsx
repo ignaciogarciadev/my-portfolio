@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const TypeWriterEffect = () => {
   const res = [
-    "Welcome to my portfolio",
+    "I turn ideas into software.",
   ];
 
   const [textPosition, setTextPosition] = useState(0);
