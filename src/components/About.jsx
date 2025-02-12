@@ -1,7 +1,7 @@
-'use client';
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import '../app/globals.css';
+"use client";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import "../app/globals.css";
 
 function Home() {
   const sectionRef = useRef(null);
@@ -14,7 +14,7 @@ function Home() {
     offset: ["start 90%", "end 10%"],
   });
 
-  // Mapeo de scroll: 
+  // Mapeo de scroll:
   // Al 0: scale 0.8 y opacity 0.
   // Al 0.5 (centro): scale 1 y opacity 1.
   // Al 1: scale 0.8 y opacity 0.
@@ -45,7 +45,10 @@ function Home() {
         {/* Bloque de texto */}
         <motion.div className="w-[60%]" style={{ scale, opacity }}>
           <p className="text-white">
-          Hi! I'm Ignacio a passionate and innovative software developer with a knack for problem-solving and a love for creating robust applications. I specialize in JavaScript, and I'm always excited to explore new technologies and challenges.
+            Hi! I&apos;m Ignacio, a passionate and innovative software developer
+            with a knack for problem-solving and a love for creating robust
+            applications. I specialize in JavaScript, and I&apos;m always
+            excited to explore new technologies and challenges.
           </p>
         </motion.div>
       </div>
