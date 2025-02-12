@@ -32,13 +32,13 @@ function Home() {
     };
 
     return (
-        <div id='Contact' className="relative flex items-center justify-center text-center h-[100vh]">
+        <div id='Contact' className=" bg-black relative flex items-center justify-center text-center h-[100vh]">
             <div className="mx-auto w-full text-center flex items-center justify-center">
                 <div className="w-full md:w-[50%] flex items-center justify-center mt-[30px]">
                     <h1 className={toggle ? 'flex' : 'hidden'}>Email sent successfully</h1>
                     <form className={toggle ? 'hidden' : "grid grid-cols-1 gap-5 w-[80%]"} onSubmit={submitHandler}>
                         <div>
-                            <label htmlFor="name" className="text-gray-900">
+                            <label htmlFor="name" className="text-white">
                                 Full Name
                             </label>
                             <input
@@ -47,13 +47,13 @@ function Home() {
                                 type="text"
                                 name="name"
                                 id="name"
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                className="shadow-sm bg-gray-900 border border-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                 placeholder="Your Name"
                                 required
                             />
                         </div>
                         <div>
-                            <label htmlFor="email" className="text-gray-900">
+                            <label htmlFor="email" className="text-white">
                                 Email Address
                             </label>
                             <input
@@ -62,12 +62,12 @@ function Home() {
                                 type="email"
                                 name="email"
                                 id="email"
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                className="shadow-sm bg-gray-900 border border-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                 placeholder="example@domain.com"
                             />
                         </div>
                         <div>
-                            <label htmlFor="message" className="text-gray-900">
+                            <label htmlFor="message" className="text-white">
                                 Your message
                             </label>
                             <textarea
@@ -76,17 +76,17 @@ function Home() {
                                 id="message"
                                 name="message"
                                 rows="3"
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                className="shadow-sm bg-gray-900 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                 placeholder="Type your message"
                             ></textarea>
                         </div>
                         <button
                             type="submit"
-                            className="flex justify-center items-center gap-2 text-white bg-black px-4 py-3 rounded-lg"
+                            className="flex justify-center items-center gap-2 text-black bg-green-500 hover:bg-green-600 px-4 py-3 rounded-lg transition-all duration-300"
                         >
                             <FaPaperPlane /> Send
                         </button>
-                        <div className="flex items-center justify-center gap-6 text-[35px]">
+                        <div className="flex items-center justify-center gap-6 text-[35px] text-white">
                             <a href="https://github.com/ignaciogarcia-dev"><FaGithub /></a>
                             <a href="https://www.linkedin.com/in/ignaciogarciadev/"><FaLinkedin /></a>
                             <a href="https://twitter.com/ignaciog_dev"><FaTwitter /></a>

@@ -14,11 +14,13 @@
     "dotenv": "^16.3.1",
     "email-js": "^2.0.2",
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.4.1",
     "http-proxy-middleware": "^2.0.6",
-    "next": "14.0.4",
+    "next": "^14.2.23",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "react-lorem-ipsum": "^1.4.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

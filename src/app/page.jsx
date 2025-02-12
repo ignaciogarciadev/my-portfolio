@@ -1,25 +1,35 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Contact from '../components/Contact';
-import Services from '@/components/Services';
-import Migueria from '@/components/portfolio/Migueria';
 import NavbarHero from '@/components/NavbarHero';
-
+import Skills from '@/components/Skills';
+import { List } from '@/components/List';
+import { Item } from '@/components/Item';
 
 export default function Home() {
+  const [selectedId, setSelectedId] = useState(null);
+
   return (
-    
     <div>
-      <NavbarHero/>
+      <NavbarHero />
       <Navbar />
       <Hero />
-    
       <About />
+       {/* Siempre renderizamos la lista */}
+       <List selectedId={selectedId} setSelectedId={setSelectedId} />
 
-      <Services/>
-      <Contact/>
+{/* Superponemos el Item como overlay */}
+<AnimatePresence>
+  {selectedId && (
+    <Item id={selectedId} setSelectedId={setSelectedId} key="item" />
+  )}
+</AnimatePresence>
+      <Skills />
+      <Contact />
     </div>
-  )
+  );
 }
