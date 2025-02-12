@@ -8,6 +8,7 @@ import NavbarHero from '@/components/NavbarHero';
 import Skills from '@/components/Skills';
 import { List } from '@/components/List';
 import { Item } from '@/components/Item';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   const [selectedId, setSelectedId] = useState(null);
