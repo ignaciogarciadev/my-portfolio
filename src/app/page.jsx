@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import NavbarHero from '@/components/NavbarHero';
