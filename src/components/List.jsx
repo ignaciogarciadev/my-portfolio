@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Card({ id, title, category, theme, setSelectedId }) {
   return (
-    <li className={`card ${theme}`} onClick={() => setSelectedId(id)}>
+    <li id="Projects" className={`card ${theme}`} onClick={() => setSelectedId(id)}>
       <div className="card-content-container">
         <motion.div className="card-content" layoutId={`card-container-${id}`}>
           <motion.div

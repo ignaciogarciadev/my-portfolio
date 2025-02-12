@@ -29,16 +29,16 @@ const Navbar = () => {
       } backdrop-blur-md bg-opacity-30`}
     >
       <div className="w-[90%] flex justify-between items-center">
-        <img src="ReducLogo.png" alt="logo" className="w-[15px] h-auto" />
+        <a href="#"><img src="ReducLogo.png" alt="logo" className="w-[15px] h-auto" /></a>
         <ul className="flex justify-center space-x-8 p-2 text-sm font-light">
           <li>
-            <a href="#">Inicio</a>
+            <a href="#About">About</a>
           </li>
           <li>
-            <a href="#">Servicios</a>
+            <a href="#Projects">Projects</a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
