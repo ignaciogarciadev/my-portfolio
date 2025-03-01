@@ -8,7 +8,7 @@ import NavbarHero from '@/components/NavbarHero';
 import Skills from '@/components/Skills';
 import { List } from '@/components/List';
 import { Item } from '@/components/Item';
-import Hero from '@/components/Hero';
+import LogoAnimation from '@/components/LogoAnimation';
 
 export default function Home() {
   const [selectedId, setSelectedId] = useState(null);
@@ -17,7 +17,7 @@ export default function Home() {
     <div>
       <NavbarHero />
       <Navbar />
-      <Hero />
+      <LogoAnimation/>
       <About />
        {/* Siempre renderizamos la lista */}
        <List selectedId={selectedId} setSelectedId={setSelectedId} />

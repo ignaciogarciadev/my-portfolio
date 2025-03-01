@@ -18,16 +18,16 @@ function NavbarHero() {
         <div className="w-[90%] flex justify-between items-center">
           <div></div>
           <ul className="flex justify-center space-x-8 p-2 text-sm font-light">
-            <li>
-              <a href="#">Inicio</a>
-            </li>
-            <li>
-              <a href="#">Servicios</a>
-            </li>
-            <li>
-              <a href="#">Contacto</a>
-            </li>
-          </ul>
+          <li>
+            <a href="#About">About</a>
+          </li>
+          <li>
+            <a href="#Projects">Projects</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
         </div>
       </nav>
 
